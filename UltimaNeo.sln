@@ -25,39 +25,66 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UltimaNeo.Web.Client", "Ult
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UltimaNeo.Web.CC", "UltimaNeo.Web.CC\", "{11014C32-BE8F-4A6C-B2EC-E7EB1F7BBA52}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UltimaNeo.Web.CC(1)", "UltimaNeo.Web.CC\", "{C67C9C98-4772-4384-91E0-3C51D3349614}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_54280"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55994"
 		Debug.AspNetCompiler.PhysicalPath = "UltimaNeo.Web.CC\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54280\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55994\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_54280"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55994"
 		Release.AspNetCompiler.PhysicalPath = "UltimaNeo.Web.CC\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54280\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55994\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "54280"
+		VWDPort = "55994"
 		SlnRelativePath = "UltimaNeo.Web.CC\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimaNeo.WebSocket.Server", "UltimaNeo.WebSocket.Server\UltimaNeo.WebSocket.Server.csproj", "{47A56B74-7C33-4BE4-A850-70B58E397C5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{69D967E2-C5A1-4B02-AAAB-62B67D55C2D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSocket", "WebSocket", "{BA212DC9-91CA-4479-8F70-60D079EB6F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimaNeo.WebSocket.Client", "UltimaNeo.WebSocket.Client\UltimaNeo.WebSocket.Client.csproj", "{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5747445D-E663-4274-ADA3-2A68B8F6A943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5747445D-E663-4274-ADA3-2A68B8F6A943}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11014C32-BE8F-4A6C-B2EC-E7EB1F7BBA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11014C32-BE8F-4A6C-B2EC-E7EB1F7BBA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5747445D-E663-4274-ADA3-2A68B8F6A943}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5747445D-E663-4274-ADA3-2A68B8F6A943}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C67C9C98-4772-4384-91E0-3C51D3349614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67C9C98-4772-4384-91E0-3C51D3349614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67C9C98-4772-4384-91E0-3C51D3349614}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67C9C98-4772-4384-91E0-3C51D3349614}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{47A56B74-7C33-4BE4-A850-70B58E397C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A56B74-7C33-4BE4-A850-70B58E397C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A56B74-7C33-4BE4-A850-70B58E397C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A56B74-7C33-4BE4-A850-70B58E397C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5747445D-E663-4274-ADA3-2A68B8F6A943} = {69D967E2-C5A1-4B02-AAAB-62B67D55C2D4}
+		{C67C9C98-4772-4384-91E0-3C51D3349614} = {69D967E2-C5A1-4B02-AAAB-62B67D55C2D4}
+		{47A56B74-7C33-4BE4-A850-70B58E397C5B} = {BA212DC9-91CA-4479-8F70-60D079EB6F89}
+		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A} = {BA212DC9-91CA-4479-8F70-60D079EB6F89}
 	EndGlobalSection
 EndGlobal
