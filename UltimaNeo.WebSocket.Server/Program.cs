@@ -163,10 +163,10 @@ namespace UltimaNeo.WebSocket.Server
             }
 
             WebSocketMessage testmsg = new WebSocketMessage("error", Guid.Parse(Properties.Resources.websocketserverGuid), Guid.Empty, "just a test");
-            testmsg.encode();
+            testmsg.encode(true);
 
             WebSocketMessage testmsg2 = new WebSocketMessage(testmsg.msg);
-            testmsg2.decode();
+            testmsg2.decode(true);
 
             switch (arguments.cmd.ToUpper())
             {
