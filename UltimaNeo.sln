@@ -55,6 +55,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSocket", "WebSocket", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimaNeo.WebSocket.Client", "UltimaNeo.WebSocket.Client\UltimaNeo.WebSocket.Client.csproj", "{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{E9062A68-B711-4226-898F-0E4259FBABBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimaNeo.Tools", "UltimaNeo.Tools.Message\UltimaNeo.Tools.csproj", "{046B7B67-ECFE-4387-8D23-6BFBE20010DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +81,10 @@ Global
 		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046B7B67-ECFE-4387-8D23-6BFBE20010DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046B7B67-ECFE-4387-8D23-6BFBE20010DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046B7B67-ECFE-4387-8D23-6BFBE20010DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046B7B67-ECFE-4387-8D23-6BFBE20010DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,5 +94,6 @@ Global
 		{C67C9C98-4772-4384-91E0-3C51D3349614} = {69D967E2-C5A1-4B02-AAAB-62B67D55C2D4}
 		{47A56B74-7C33-4BE4-A850-70B58E397C5B} = {BA212DC9-91CA-4479-8F70-60D079EB6F89}
 		{65A4D3DE-F1D0-4F14-A942-7A6229D3C92A} = {BA212DC9-91CA-4479-8F70-60D079EB6F89}
+		{046B7B67-ECFE-4387-8D23-6BFBE20010DF} = {E9062A68-B711-4226-898F-0E4259FBABBC}
 	EndGlobalSection
 EndGlobal

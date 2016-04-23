@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Reflection;
+using System.Security.Cryptography;
 using System.Text;
 
 /// <summary>
-///  websocket-sharp -  C# implementation of the WebSocket protocol client and server
+///  websocket-sharp - C# implementation of the WebSocket protocol client and server
 ///  http://sta.github.io/websocket-sharp 
-///  sta.blockhead 4/21/2016  The MIT License
+///  sta.blockhead 2010-2016 The MIT License
 /// </summary>
 using WebSocketSharp;
 using WebSocketSharp.Net;
@@ -19,6 +20,8 @@ using WebSocketSharp.Server;
 using CmdLine;
 
 using System.Threading.Tasks;
+
+using UltimaNeo.Tools;
 
 namespace UltimaNeo.WebSocket.Server
 {
@@ -38,13 +41,26 @@ namespace UltimaNeo.WebSocket.Server
     {
         protected override void OnMessage(MessageEventArgs e)
         {
-            string msg = string.Empty;
-
-            if (e.Data.Length == 0)
-            {
-            }
+            if (e.Data.Length <32) { }
             else
             {
+                WebSocketMessage wmsg = new WebSocketMessage(e.Data);
+                if (!wmsg.isValid)
+                {
+                    WebSocketMessage errwmsg = new WebSocketMessage("error",Guid.Parse(Properties.Resources.websocketserverGuid),Guid.Empty,wmsg.errormsg);
+                    Send(errwmsg.msg);
+                }
+
+                //                if (WebSocketMessage.check(e.Data))
+                //                WebSocketMessage wsm = new WebSocketMessage(e.Data);
+                //                if (new  Ee.Data.)
+                //                string[] amsg = e.Data.Split('■');
+                //                msg = e.Data.Remove(0, amsg[0].Length + 1);
+                //                string crc32 = Crc32CAlgorithm.Compute(Encoding.ASCII.GetBytes(msg)).ToString();
+                //                if (crc32 != amsg[0])
+                //                {
+                //                    Send(msg);
+                //                }
             }
         }
     }
@@ -145,6 +161,12 @@ namespace UltimaNeo.WebSocket.Server
 
                 Environment.Exit(1);
             }
+
+            WebSocketMessage testmsg = new WebSocketMessage("error", Guid.Parse(Properties.Resources.websocketserverGuid), Guid.Empty, "just a test");
+            testmsg.encode();
+
+            WebSocketMessage testmsg2 = new WebSocketMessage(testmsg.msg);
+            testmsg2.decode();
 
             switch (arguments.cmd.ToUpper())
             {
